@@ -59,6 +59,15 @@ main {
 padding: 2rem;
 }
 
+section a {
+    color: #0077B5; /* LinkedIn blue color */
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
 /* Additional styles for other sections go here */
 footer {
 text-align: center;
