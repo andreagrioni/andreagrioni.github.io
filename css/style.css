@@ -82,3 +82,19 @@ text-align: center;
 padding: 1rem 0;
 background-color: #f5f5f5;
 }
+
+/* Make the LinkedIn link appear as a button */
+.link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #0077b5; /* LinkedIn color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.link-button:hover {
+  background-color: #005582; /* Darker LinkedIn color on hover */
+}
