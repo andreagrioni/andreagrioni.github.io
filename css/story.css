@@ -1,0 +1,201 @@
+/* story.css — prose styles for the story reader */
+
+.story-container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* Prose container */
+.prose {
+  max-width: 700px;
+}
+
+.prose h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75rem 0;
+  color: var(--primary);
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2.25rem 0 0.75rem 0;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.5rem 0;
+  color: var(--text);
+  /* override the uppercase section-heading style from style.css */
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.prose h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.4rem 0;
+  color: var(--text);
+}
+
+.prose p {
+  margin: 0 0 1.1rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #3a3a3a;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1.1rem 0;
+  padding-left: 1.6rem;
+}
+
+.prose li {
+  margin-bottom: 0.45rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #3a3a3a;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0.85rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-subtle);
+  border-radius: 0 4px 4px 0;
+}
+
+.prose blockquote p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Inline code */
+.prose code {
+  font-family: 'SF Mono', 'Fira Code', Consolas, 'Courier New', monospace;
+  font-size: 0.875em;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  color: var(--primary);
+}
+
+/* Code blocks */
+.prose pre {
+  background: #f6f8fa;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin: 0 0 1.25rem 0;
+}
+
+.prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+/* Images */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1.25rem auto;
+  display: block;
+}
+
+/* Links */
+.prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 119, 181, 0.35);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* Horizontal rules */
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.93rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.prose th {
+  background: var(--bg-subtle);
+  font-weight: 600;
+}
+
+.prose tr:hover td {
+  background: var(--bg-subtle);
+}
+
+/* <mark> highlights (used in some docs) */
+.prose mark {
+  background: #fff3b0;
+  padding: 0.1em 0.25em;
+  border-radius: 2px;
+}
+
+/* Loading / error message */
+.story-status {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Italic byline (e.g. "By Andrea Grioni") */
+.prose p > em:only-child {
+  color: var(--text-muted);
+  font-size: 0.93rem;
+}

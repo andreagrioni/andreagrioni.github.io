@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrea Grioni</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">AG</a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#stories">Stories</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container story-container">
+    <a href="index.html#stories" class="back-link">&#8592; All Stories</a>
+    <article id="story-body" class="prose">
+      <p class="story-status">Loading&hellip;</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <p>Copyright &copy; 2026 Andrea Grioni</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const file = params.get('file');
+  const body = document.getElementById('story-body');
+
+  if (!file) {
+    body.innerHTML = '<p class="story-status">No story specified.</p>';
+  } else {
+    fetch(file)
+      .then(res => {
+        if (!res.ok) throw new Error('not found');
+        return res.text();
+      })
+      .then(md => {
+        const html = marked.parse(md);
+
+        // Fix relative image/src paths to be relative to the docs folder
+        const baseDir = file.substring(0, file.lastIndexOf('/') + 1);
+        body.innerHTML = html.replace(
+          /src="(?!https?:\/\/|\/|data:)(\.\/)?/g,
+          `src="${baseDir}`
+        );
+
+        // Set page title from the first h1
+        const h1 = body.querySelector('h1');
+        if (h1) document.title = h1.textContent + ' | Andrea Grioni';
+      })
+      .catch(() => {
+        body.innerHTML = '<p class="story-status">Could not load this story. If you\'re opening this file directly, run it through a local server (e.g. <code>python3 -m http.server</code>).</p>';
+      });
+  }
+</script>
+
+</body>
+</html>

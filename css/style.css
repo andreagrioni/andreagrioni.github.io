@@ -1,100 +1,279 @@
 /* style.css */
 
-header {
-    text-align: center;
-    padding: 0rem 0;
-    background-color: #a4e4f1;  
+:root {
+  --primary: #1a2e4a;
+  --accent: #0077b5;
+  --accent-hover: #005f91;
+  --bg: #ffffff;
+  --bg-subtle: #f8f9fa;
+  --text: #2d2d2d;
+  --text-muted: #666666;
+  --border: #e5e7eb;
+  --max-width: 860px;
 }
 
-.header-content {
-    display: flex; /* Use flexbox to create a horizontal layout */
-    align-items: center; /* Center items vertically within the container */
-    justify-content: center; /* Center items horizontally within the container */
-  }  
+* {
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
 }
 
-.profile-picture {
-max-height: 100px;
-max-width: 115px;
-border-radius: 50%;
-margin-bottom: 0rem;
-}
-
-.name-title {
-    text-align: left; /* Adjust text alignment */
-  }
-
+/* NAV */
 nav {
-    background-color: #333;
-    padding: 1rem 0;
-  }
-  
-nav ul {
-list-style: none;
-text-align: center;
-margin: 0;
-padding: 0;
+  background: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li {
-display: inline;
-margin: 0 1rem;
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  flex-shrink: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li a {
-text-decoration: none;
-color: #fff;
-font-weight: bold;
+  display: block;
+  padding: 0.9rem 0.85rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: color 0.15s;
 }
 
-h1 {
-margin: 0;
-font-size: 2.5rem;
+nav ul li a:hover {
+  color: #ffffff;
 }
 
-h2 {
-margin: 0;
-font-size: 1.5rem;
-color: #555;
+/* HEADER */
+header {
+  background: linear-gradient(140deg, #1a2e4a 0%, #254a6e 100%);
+  padding: 3.5rem 2rem;
 }
 
+.header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-picture {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.name-title h1 {
+  margin: 0 0 0.35rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.name-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* MAIN */
 main {
-padding: 2rem;
+  padding: 0;
 }
 
-section a {
-    color: #0077B5; /* LinkedIn blue color */
-    text-decoration: none;
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-section a:hover {
-    text-decoration: underline;
+/* SECTIONS */
+section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Additional styles for other sections go here */
-footer {
-text-align: center;
-padding: 1rem 0;
-background-color: #f5f5f5;
+section:last-child {
+  border-bottom: none;
+  padding-bottom: 3rem;
 }
 
-/* Make the LinkedIn link appear as a button */
+section h3 {
+  margin: 0 0 1.25rem 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+}
+
+section p {
+  margin: 0 0 0.9rem 0;
+  color: #444;
+  font-size: 0.96rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+.section-intro {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem !important;
+}
+
+/* STORIES */
+.story-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.story-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.story-list li:last-child {
+  border-bottom: none;
+}
+
+.story-date {
+  flex-shrink: 0;
+  width: 5.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.story-title {
+  flex: 1;
+  color: var(--text);
+}
+
+.story-links {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.pub-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.pub-link:hover {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+/* EXPERIENCE & EDUCATION */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  padding: 0.6rem 0 0.6rem 1rem;
+  border-left: 2px solid var(--border);
+  margin-bottom: 0.25rem;
+}
+
+.timeline li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline .role {
+  display: block;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timeline .org {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
+/* CONTACT */
+#contact p {
+  margin-bottom: 1.25rem !important;
+}
+
 .link-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  background-color: #0077b5; /* LinkedIn color */
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: var(--accent);
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.15s;
 }
 
 .link-button:hover {
-  background-color: #005582; /* Darker LinkedIn color on hover */
+  background-color: var(--accent-hover);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.82rem;
 }
