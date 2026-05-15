@@ -151,37 +151,100 @@ section p:last-child {
   margin-bottom: 0;
 }
 
-.section-intro {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 1.25rem !important;
+
+/* GIT LOG TIMELINE */
+.git-log {
+  margin-top: 0.25rem;
 }
 
-/* STORIES */
-.story-list {
+.gl-commit {
+  display: flex;
+  gap: 1rem;
+}
+
+.gl-dot-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.gl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--primary);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.gl-dot--empty {
+  background: var(--bg);
+  box-shadow: 0 0 0 2px var(--border);
+}
+
+.gl-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 5px;
+  min-height: 1.5rem;
+}
+
+.gl-body {
+  flex: 1;
+  padding-bottom: 1.75rem;
+}
+
+.gl-commit:last-child .gl-body {
+  padding-bottom: 0;
+}
+
+.gl-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.gl-meta {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Stories under each commit */
+.gl-stories {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.story-list li {
+.gl-stories li {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  padding: 0.75rem 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.93rem;
-  line-height: 1.5;
+  gap: 0.6rem;
+  padding: 0.3rem 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
 }
 
-.story-list li:last-child {
-  border-bottom: none;
+.gl-stories li::before {
+  content: '↳';
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  flex-shrink: 0;
 }
 
+/* Shared story item parts (used in gl-stories) */
 .story-date {
   flex-shrink: 0;
-  width: 5.5rem;
-  font-size: 0.78rem;
+  width: 5rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
 }
@@ -193,14 +256,14 @@ section p:last-child {
 
 .story-links {
   display: flex;
-  gap: 0.35rem;
+  gap: 0.3rem;
   flex-shrink: 0;
 }
 
 .pub-link {
   display: inline-block;
-  font-size: 0.75rem;
-  padding: 2px 8px;
+  font-size: 0.72rem;
+  padding: 2px 7px;
   border-radius: 4px;
   background: var(--bg-subtle);
   border: 1px solid var(--border);
@@ -217,7 +280,7 @@ section p:last-child {
   border-color: var(--accent);
 }
 
-/* EXPERIENCE & EDUCATION */
+/* EDUCATION */
 .timeline {
   list-style: none;
   padding: 0;
@@ -276,4 +339,40 @@ footer {
   background: var(--primary);
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.82rem;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  /* Nav: hide brand, tighten link padding */
+  .nav-brand { display: none; }
+  .nav-container { padding: 0 0.5rem; }
+  nav ul li a { padding: 0.75rem 0.55rem; font-size: 0.8rem; }
+
+  /* Header: smaller image and text */
+  header { padding: 2rem 1rem; }
+  .header-content { gap: 1rem; }
+  .profile-picture { width: 75px; height: 75px; }
+  .name-title h1 { font-size: 1.4rem; }
+  .name-title h2 { font-size: 0.875rem; }
+
+  /* Container: less side padding */
+  .container { padding: 0 1rem; }
+
+  /* Git log: tighten the gutter */
+  .gl-commit { gap: 0.75rem; }
+
+  /* Story items: wrap onto two lines.
+     Line 1: ↳  title
+     Line 2:    badges  */
+  .gl-stories li {
+    flex-wrap: wrap;
+    row-gap: 0.2rem;
+  }
+
+  .story-date { display: none; }
+
+  .story-links {
+    flex-basis: 100%;
+    padding-left: 1rem; /* align with title */
+  }
 }
