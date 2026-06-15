@@ -70,7 +70,7 @@ That conviction is hard to manufacture over email. It's almost easy in a room.
 
 ## The science it serves
 
-For the trial behind all of this, the design was just published. The VICTORION-2 PREVENT design paper was published online in the *American Heart Journal* in May 2026 — a Phase 3, randomized, double-blind, placebo-controlled, international study testing whether inclisiran reduces major adverse cardiovascular events in patients with established atherosclerotic disease who are already on high-intensity statins. The primary endpoint is three-point MACE: cardiovascular death, non-fatal heart attack, non-fatal stroke. The treatment is given as an injection on day one, at month three, and every six months after that.
+For the trial behind all of this, the design was just published. The [VICTORION-2 PREVENT design paper](https://doi.org/10.1016/j.ahj.2026.107493) was published online in the *American Heart Journal* in May 2026 — a Phase 3, randomized, double-blind, placebo-controlled, international study testing whether inclisiran reduces major adverse cardiovascular events in patients with established atherosclerotic disease who are already on high-intensity statins. The primary endpoint is three-point MACE: cardiovascular death, non-fatal heart attack, non-fatal stroke. The treatment is given as an injection on day one, at month three, and every six months after that.
 
 That last detail is quietly the whole challenge. Every six months. In the long stretches between those visits, life happens — people move, people change doctors, people drift. The paper is the skeleton of the experiment. The room, and the relationships in it, are the muscle that keeps it standing.
 
@@ -79,8 +79,6 @@ I [wrote previously](story.html?file=docs/AG014_clinical_development.md) about w
 ## The part that doesn't show up in a protocol
 
 We tend to picture clinical research as something cold and procedural. Numbers, systems, compliance. But spend two days in that room and you see what it actually runs on: relationships. Between sponsor and site. Between investigator and patient. Between the people who carry a trial in each country and have to believe, personally, that the next phone call is worth making.
-
-A trial is an experiment. But it's an experiment made of people — and the answer it produces is only as clear as the picture they manage to keep.
 
 ---
 
