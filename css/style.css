@@ -110,6 +110,12 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.name-title h2.tagline {
+  margin-top: 0.3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* MAIN */
 main {
   padding: 0;
