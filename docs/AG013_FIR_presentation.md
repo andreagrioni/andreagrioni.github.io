@@ -100,7 +100,7 @@ Start small: Identify an upcoming forum this quarter to present your contributio
 
 - **Define Your Goals:** Reflect on your long-term aspirations. What roles, skills, or impacts do you envision in 3–5 years?
 - **Create a Development Plan:** Outline your goals with specific milestones (e.g., "Master biomarker validation techniques by Q3").
-- **Align with Mentors and Managers:** Seek advice from your line manager, but also look for a senior colleage interested in mentioring you. Share your vision to gain feedback and advocacy. For example, ask, “I aim to lead cross-functional projects—how can I prepare?”
+- **Align with Mentors and Managers:** Seek advice from your line manager, but also look for a senior colleague interested in mentoring you. Share your vision to gain feedback and advocacy. For example, ask, “I aim to lead cross-functional projects—how can I prepare?”
 
 ### Taking Initiative
 
