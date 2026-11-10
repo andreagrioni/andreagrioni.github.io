@@ -44,6 +44,8 @@ That makes the question of who runs these trials more pressing, not less. The pe
 
 Which raises a question we are not asking enough. We talk a lot about keeping a “human in the loop”. We talk far less about who that human is, what they have been trained to judge, and what they can realistically check. I’ll take that on in a follow-up article.
 
+> **Follow-up:** [Who Is the Human in the Loop?](story.html?file=docs/AG017_human_in_the_loop.md)
+
 Where do you see the biggest shift in your daily work: protocol review, site support or audit readiness? I’d love to hear how your teams are approaching this.
 
 ---
