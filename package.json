@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-stories.mjs"
+    "build": "node scripts/build-stories.mjs",
+    "cv": "node scripts/build-cv-pdf.mjs"
   },
   "devDependencies": {
     "marked": "^12.0.2"

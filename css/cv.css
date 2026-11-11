@@ -1,0 +1,211 @@
+/* cv.css — CV page (screen) and one-page A4 PDF (print) */
+
+.cv-page {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.cv-download {
+  margin: 0 0 1.5rem 0;
+}
+
+.cv {
+  max-width: 780px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.cv a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cv-header h1 {
+  font-size: 1.9rem;
+  margin: 0;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.cv-role {
+  margin: 0.2rem 0 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.cv-contact {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cv-section {
+  margin-top: 1.25rem;
+}
+
+.cv h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.cv p {
+  margin: 0;
+}
+
+.cv-item {
+  margin-bottom: 0.7rem;
+}
+
+.cv-item-compact {
+  margin-bottom: 0.25rem;
+}
+
+.cv-item-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cv-item-head span {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.cv-item-head strong {
+  color: var(--primary);
+}
+
+.cv-item-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cv ul {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1.1rem;
+}
+
+.cv li {
+  margin-bottom: 0.15rem;
+}
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+}
+
+.cv-skills dt {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.cv-skills dd {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .cv-item-head {
+    flex-direction: column;
+    gap: 0;
+  }
+  .cv-skills {
+    grid-template-columns: 1fr;
+  }
+  .cv-skills dd {
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* ---------------------------------------------------------------- print / PDF */
+
+@page {
+  size: A4;
+  margin: 11mm 14mm;
+}
+
+@media print {
+  nav,
+  footer,
+  .cv-download {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff;
+  }
+
+  .container,
+  .cv-page {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cv {
+    max-width: none;
+    font-size: 9pt;
+    line-height: 1.34;
+  }
+
+  .cv-header h1 {
+    font-size: 18pt;
+  }
+
+  .cv-role {
+    font-size: 10.5pt;
+  }
+
+  .cv-contact,
+  .cv-item-sub,
+  .cv-item-head span {
+    font-size: 8.5pt;
+  }
+
+  .cv-section {
+    margin-top: 9pt;
+  }
+
+  .cv h2 {
+    font-size: 8.5pt;
+    margin-bottom: 4pt;
+  }
+
+  .cv-item {
+    margin-bottom: 5pt;
+    break-inside: avoid;
+  }
+
+  .cv-item-compact {
+    margin-bottom: 1.5pt;
+  }
+
+  .cv li {
+    margin-bottom: 1pt;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+.cv-item-phd {
+  margin-bottom: 0.4rem;
+}
+
+@media print {
+  .cv-item-phd {
+    margin-bottom: 3pt;
+  }
+}

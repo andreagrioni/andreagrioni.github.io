@@ -148,6 +148,7 @@ function renderStory(story, prev, next) {
       <li><a href="../index.html#timeline">Timeline</a></li>
       <li><a href="../index.html#education">Education</a></li>
       <li><a href="../index.html#publications">Publications</a></li>
+      <li><a href="../cv.html">CV</a></li>
       <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </div>
@@ -189,7 +190,7 @@ function pubDate(label) {
 }
 
 function buildSitemap(stories) {
-  const urls = [`${SITE}/`, ...stories.map((s) => `${SITE}/docs/${s.id}.html`)];
+  const urls = [`${SITE}/`, `${SITE}/cv.html`, ...stories.map((s) => `${SITE}/docs/${s.id}.html`)];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}
