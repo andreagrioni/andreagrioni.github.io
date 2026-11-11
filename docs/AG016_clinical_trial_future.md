@@ -1,4 +1,4 @@
-![](./img/ag016_img000.png)
+![](./img/ag016_img000.jpg)
 
 # Who Will Run the Clinical Trial of the Future?
 

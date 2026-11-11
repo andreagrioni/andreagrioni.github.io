@@ -2,7 +2,7 @@
 
 <mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
 
-![](./img/ag007_img001.png)
+![](./img/ag007_img001.jpg)
 
 ## Introduction to Nephrology
 Originating from the ancient Greek word 'nephros' meaning kidney, nephrology is a specialized medical discipline dedicated to the diagnosis, treatment, and management of kidney diseases. This field covers a spectrum of conditions, from acute kidney injuries to chronic kidney diseases, delving into the kidney's anatomy, physiology, and related disorders.
@@ -31,7 +31,7 @@ Elevating awareness about kidney diseases is not just essential—it's imperativ
 
 ## Zooming into IgA Nephropathy (IgAN)
 
-![](./img/ag007_img002.png)
+![](./img/ag007_img002.jpg)
 
 ------------------------------------------------------------------------
 
