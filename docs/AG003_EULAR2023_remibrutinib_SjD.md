@@ -2,6 +2,8 @@
 
 <mark > UPDATE 20231108:</mark> This work was published as part of a larger clinical paper [Efficacy and safety of remibrutinib, a selective potent oral BTK inhibitor, in Sjögren's syndrome: results from a randomised, double-blind, placebo-controlled phase 2 trial](https://doi.org/10.1136/ard-2023-224691).
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ![EULAR2023](img/ag003_img001.jpeg)
 
 I’m excited to share the findings from our recent poster presentation at the [EULAR2023 conference](https://www.eular.org)! Our research focused on the exploratory biomarker analysis conducted on the remibrutinib Phase 2 clinical trial (LOUiSSE) in Sjögren’s syndrome (SjS).
@@ -18,6 +20,8 @@ I would like to express my gratitude to the EULAR conference for providing this 
 *Author Notes*
 
 A brief description of SomaScan analysis is available on [medium](https://medium.com/@grioni.andrea/somascan-a-powerful-tool-for-proteomics-analysis-dc3481374436).
+
+For the broader picture, I followed up with an overview of the Sjögren's treatment landscape, covering remibrutinib alongside ianalumab and iscalimab, in [Understanding Sjögren's Syndrome: Current Treatments and the Road Ahead](story.html?file=docs/AG004_sjd_treatment_strategy.md).
 
 Please feel free to comment! you can also contact me at my [personal profile](https://andreagrioni.github.io) or on [LinkedIn](https://www.linkedin.com/in/agrioni/).
 

@@ -3,7 +3,14 @@ Mastering Single Cell RNA-Seq with Dreamlet
 Andrea Grioni
 2023/10/01
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ## Dreamlet: A Powerful Tool for Single Cell RNA-Seq Analysis with Linear Mixed Effect Models
+
+After the talks on single cell sequencing I summarised in my [GEMSeq
+conference notes](story.html?file=docs/AG002_GEMseq_notes.md), I
+wanted to go hands-on. This tutorial walks through one of the tools
+that makes large single cell studies with many donors tractable.
 
 ------------------------------------------------------------------------
 

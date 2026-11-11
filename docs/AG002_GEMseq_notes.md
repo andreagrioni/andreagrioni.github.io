@@ -1,4 +1,7 @@
 # Decoding the Heart at GEMSeq: Insights from the Graz Expert Meeting on Single Cell RNA Sequencing in Cardiovascular Science
+
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ## Conference Notes Recap
 
 Attending the [5th Graz Expert Meeting for single cell RNA sequencing in Cardiovascular Science (GEMSeq)](https://www.linkedin.com/posts/andreas-zirlik_uhcg-singlecell-cardiology-activity-7109570324093952000-TM4M?utm_source=share&utm_medium=member_desktop) for the first time was an incredible experience! I had the opportunity to learn about the current applications of single cell RNA sequencing in cardiovascular research and beyond. The talks were both interesting and inspiring, and it was fantastic to see the partecipation of Novartis in this event.
@@ -62,3 +65,5 @@ Here’s a consolidated review of the conference sessions I attended. Regrettabl
 
 ---
 
+
+*Where this led next:* the meeting stayed with me. I went hands-on with single cell analysis in [Mastering Single Cell RNA-Seq with Dreamlet](story.html?file=docs/AG005_dreamlet_ad.md), and stepped back to the basics of plaque biology in [Introduction to Atherosclerosis and PCSK9 Inhibitors](story.html?file=docs/AG010_intro_atherosclerosis.md). The large outcome trials discussed on Monday later became my day job, as I describe in [Learning to Think Like a Clinical Development Professional](story.html?file=docs/AG014_clinical_development.md).

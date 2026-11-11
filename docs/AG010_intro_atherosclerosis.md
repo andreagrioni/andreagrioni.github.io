@@ -1,6 +1,10 @@
 # Introduction to Atherosclerosis and PCSK9 Inhibitors
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 Atherosclerosis is a leading cause of cardiovascular diseases worldwide. Understanding its pathophysiology and exploring innovative treatment options like PCSK9 inhibitors are crucial for advancing cardiovascular health.
+
+I first touched on atherosclerosis in my [notes from the GEMSeq meeting](story.html?file=docs/AG002_GEMseq_notes.md), where single cell sequencing was used to profile the cells in atherosclerotic plaques. Here, I step back to the basics: how plaques form, and how lowering LDL cholesterol through PCSK9 inhibition can help.
 
 ## Pathophysiology of Atherosclerosis
 
@@ -29,6 +33,8 @@ However, when PCSK9 attaches to an LDL receptor, it prevents the receptor from r
 </p>
 
 Therapies that target the PCSK9 gene represent a novel approach in the management of high cholesterol. These therapies work by inhibiting PCSK9, leading to increased LDL receptor availability and enhanced clearance of LDL-C from the blood. Evidence from clinical research suggests that such treatments can significantly lower LDL-C levels and may provide substantial cardiovascular benefits. By integrating PCSK9 inhibition into treatment regimens, we can offer new hope for patients struggling with high cholesterol and atherosclerosis, potentially reducing the global burden of cardiovascular diseases.
+
+<mark > UPDATE 20261111</mark> Inclisiran, the siRNA approach to PCSK9 described in reference 3, is now being tested in the VICTORION-2 PREVENT cardiovascular outcome trial. I wrote about the people who keep that trial running in [The Room Where the Experiment Lives](story.html?file=docs/AG015_EUNL_meeting.md).
 
 ## Disclaimer
 

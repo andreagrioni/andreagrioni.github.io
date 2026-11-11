@@ -1,5 +1,7 @@
 # From Academia to Pharma: What I Learned, What I Wish I Knew, and How You Can Succeed
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ## Introduction
 
 Three weeks ago, I had the privilege of speaking at the [Faces of Industrial Research (FIR)](https://facesofindustrialresearch.com/) conference—a unique event that offers life-science students a glimpse into industrial research at Swiss biotech companies. The conference aims to bridge the gap between academia and industry by bringing together scientists from various sectors to showcase their projects and share inspiring career journeys.
@@ -63,7 +65,7 @@ We work closely with teams across Novartis—Research, Clinical Development, Reg
    - *Example:* Phase III insights for Compound A may guide improvements in its next-generation successor.
 
 3. **Scientific Communication:**
-   - Collaborate with Medical Affairs to publish findings in journals or present at conferences (e.g., ASCO, EHA).
+   - Collaborate with Medical Affairs to publish findings in journals or present at conferences (e.g., ASCO, EHA). Two examples from my own work: our posters at [EULAR2023](story.html?file=docs/AG003_EULAR2023_remibrutinib_SjD.md) and [ASN Kidney Week 2023](story.html?file=docs/AG008_LNP023_IgAN.md).
    - *Goal:* Build scientific credibility and increase awareness of Novartis’ innovations.
 
 ### Lesson Learned
@@ -120,7 +122,7 @@ Start small: Identify an upcoming forum this quarter to present your contributio
 ### Professional Growth
 
 - **Gain Cross-Functional Experience:**
-  - Consider lateral moves, such as joining a translational research team temporarily.
+  - Consider lateral moves, such as joining a translational research team temporarily. I did this myself with a [job rotation into clinical trial development](story.html?file=docs/AG011_Driven_by_Curiosity.md).
   - Participate in stretch assignments, like co-authoring a manuscript with Medical Affairs.
 - **Develop a T-Shaped Skill Set:** Build deep expertise in biomarkers while acquiring broad knowledge of drug development.
 
@@ -146,5 +148,7 @@ A few parting reminders:
 If you find this advice useful, **I’m happy to help**—whether through a brief call, feedback on your development plan, or sharing resources. I’m still learning, and I value your insights as much as you might value mine.
 
 **Feel free to reach out, and thank you for your time!**
+
+> **Follow-up:** I have since moved into clinical development full time. I wrote about my first eight months in [Learning to Think Like a Clinical Development Professional](story.html?file=docs/AG014_clinical_development.md).
 
 *— Andrea* | [LinkedIn](https://www.linkedin.com/in/agrioni/) | [Personal Page](https://andreagrioni.github.io/)

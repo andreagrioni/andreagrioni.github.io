@@ -4,11 +4,13 @@
 
 *By Andrea Grioni*
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ---
 
 A clinical trial site has a question. It travels to the Clinical Research Associate in the country team, then on to the global trial team. Sometimes the answer is immediate. Other times someone has to dig through study documentation to find it.
 
-Now imagine the site or CRA asking an AI system that works over a controlled, current set of trial documents. It wouldn’t just answer. It would point to the relevant documents, the precise passages and their context.
+Now imagine the site or CRA asking an AI system that works over a controlled, current set of trial documents. It wouldn’t just answer. It would point to the relevant documents, the precise passages and their context. I first sketched this idea in [Learning to Think Like a Clinical Development Professional](story.html?file=docs/AG014_clinical_development.md), and it has stayed with me since.
 
 The site query doesn’t disappear, but who answers it, how fast, and with what skills may all change. After BioTechX, Festival of Biologics and the TransPerfect Life Sciences C3 Summit in Basel, that is the question I keep returning to: how will AI change the way clinical trials are run, and who will run them?
 

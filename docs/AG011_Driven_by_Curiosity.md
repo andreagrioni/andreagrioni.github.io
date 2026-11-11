@@ -1,5 +1,7 @@
 # Driven by Curiosity: Why I Chose a Job Rotation into Clinical Trial Development
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 In biomarker development, our work typically comes into play at the later stages of the research pipeline, when a compound has already passed through preclinical development and is entering Phase I (first-in-human) and Phase II (early efficacy and safety evaluation). Having spent over three years working with Phase I and II trials, and conducting exploratory biomarker analyses in Phase III (large trials for regulatory submission), it became increasingly clear that a deeper understanding of clinical trial development was essential for driving impactful biomarker strategies.
 
 ![](./img/ag011_img001.jpeg)
@@ -35,7 +37,7 @@ This shift also provided an invaluable opportunity to expand my professional net
 
 One of the more practical motivations was simply the need to understand how different departments work within a pharmaceutical company. I was well-versed in biomarker development, but clinical trial development operates in a completely different environment, with its own processes, metrics, and challenges. This experience has allowed me to step into a new world, giving me a holistic view of the drug development process.
 
-In my next post, I’ll share more about how I applied data science within clinical trials and the specific areas where it made a significant difference.
+In my [next post](story.html?file=docs/AG012_DS_AI_Aut_clinical_trials.md), I share more about how I applied data science within clinical trials and the specific areas where it made a significant difference.
 
 ___
 

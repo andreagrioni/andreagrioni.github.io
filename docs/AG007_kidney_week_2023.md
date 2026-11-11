@@ -1,5 +1,7 @@
 # Nephrology: The Study of Kidneys and Kidney Week 2023
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ![](./img/ag007_img001.png)
 
 ## Introduction to Nephrology
@@ -52,6 +54,8 @@ Biomarkers serve as invaluable tools in diagnosing, monitoring, and prognosticat
 - **eGFR (estimated Glomerular Filtration Rate)**: A pivotal measure of kidney function, eGFR provides insights into the kidneys' filtration efficiency. In the context of IgAN, a declining eGFR can be indicative of disease progression and is crucial for gauging kidney damage severity.
 
 As the narrative of IgA Nephropathy continues to evolve, research is shedding light on its many facets. The aspiration is that as we deepen our understanding of its genetics, molecular aspects, and potential biomarkers, we'll pave the way for more precise and effective treatments.
+
+In my [next article](story.html?file=docs/AG008_LNP023_IgAN.md), I zoom in on one of these new approaches: iptacopan, an oral Factor B inhibitor, and the proteomics work from its Phase 2 trial that we presented at Kidney Week.
 
 ---
 

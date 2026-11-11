@@ -1,5 +1,7 @@
 # Highlights from the American College of Rheumatology Conference
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 **Introduction:**  
 The American College of Rheumatology's annual meeting, held from November 10th to 15th in San Diego, showcased groundbreaking research in rheumatology. Although I was not present, I am proud that my contributions at Novartis played a key role in some of the significant research presented.
 
@@ -9,10 +11,10 @@ The American College of Rheumatology's annual meeting, held from November 10th t
   Ianalumab has shown promise in a Phase 2 trial, significantly reducing B cell counts and autoantibody levels in Systemic Lupus Erythematosus (SLE) patients. The clinical responses were effective irrespective of the initial interferon gene signature status. Read abstract [here](https://acrabstracts.org/abstract/modulation-of-b-cell-and-interferon-pathways-by-ianalumab-in-patients-with-systemic-lupus-erythematosus-findings-from-a-phase-2-clinical-trial/)
 
 - **Sjoegren's Disease Research:**  
-  In Sjögren’s Disease, Ianalumab demonstrated dose-dependent effects. The highest dose (300 mg) significantly modulated serum proteins and autoantibodies, aligning with the clinical efficacy observed in a Phase 2b trial. Read abstract [here](https://acrabstracts.org/abstract/dose-dependent-modulation-of-a-b-cell-protein-signature-by-ianalumab-in-patients-with-sjogrens-disease/)
+  In Sjögren’s Disease, Ianalumab demonstrated dose-dependent effects. The highest dose (300 mg) significantly modulated serum proteins and autoantibodies, aligning with the clinical efficacy observed in a Phase 2b trial (which I summarised in [Understanding Sjögren's Syndrome](story.html?file=docs/AG004_sjd_treatment_strategy.md)). Read abstract [here](https://acrabstracts.org/abstract/dose-dependent-modulation-of-a-b-cell-protein-signature-by-ianalumab-in-patients-with-sjogrens-disease/)
 
 **Significance of Findings:**  
-These studies mark significant advancements in the treatment of SLE and Sjögren’s Disease (SjD).
+These studies mark significant advancements in the treatment of SLE and Sjögren’s Disease (SjD). They also continue a thread from earlier in the year, when we presented the biomarker results of another B cell–targeting drug, [remibrutinib, at EULAR2023](story.html?file=docs/AG003_EULAR2023_remibrutinib_SjD.md).
 
 **Conclusion:**  
 The American College of Rheumatology Conference was a seminal event in rheumatology. I am proud to be part of Novartis, a company at the forefront of reimagining medicine for patient care.

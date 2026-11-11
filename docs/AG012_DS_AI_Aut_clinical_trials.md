@@ -1,4 +1,7 @@
 # Automation, Data Science, and Generative AI: Supercharging Data Quality in Clinical Trials
+
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 In my [previous post](story.html?file=docs/AG011_Driven_by_Curiosity.md), I explained why I chose a job rotation into clinical trial development. Now, I want to summarize a proof of concept of how I integrated data science, automation, and generative AI (genAI) during my job rotation in clinical development, showcasing how these technologies can significantly improve data quality and boost the overall efficiency of the clinical trial team.
 ## Monitoring and Ensuring Data Accuracy: The Clinical Trial Team’s Daily Task
 A significant part of the clinical trial team’s daily work involves monitoring the data entered into the case report forms (CRFs) by principal investigators at each site, which could be hospitals or clinics. Every time a patient visits, new data is added to the CRF, including information on adverse events, vital signs (such as weight, blood pressure), laboratory results, and clinical endpoints. For instance, in a trial related to diabetes, clinical endpoints could include glucose levels, while for a trial on renal failure, it might be kidney function markers.
@@ -45,7 +48,7 @@ Improved data quality translates to:
 ## Call to Action: Embracing the Future of Clinical Trials
 Data quality is the backbone of a successful clinical trial. By embracing automation, data science, and generative AI, we can not only improve the speed and accuracy of trial operations but also open up new opportunities for research and development, ultimately benefiting patients and companies alike. The pharmaceutical industry must wholeheartedly adopt these transformative technologies to usher in a new era of efficiency, accuracy, and ultimately, medical breakthroughs.
 
-In my next post, I’ll discuss how these improvements in data quality can foster better collaboration between research and clinical development, further accelerating the drug discovery process.
+I returned to these ideas after moving into clinical development full time. In [Learning to Think Like a Clinical Development Professional](story.html?file=docs/AG014_clinical_development.md), I revisit how large language models can turn unstructured site notes into a systematic quality layer, and in [Who Is the Human in the Loop?](story.html?file=docs/AG017_human_in_the_loop.md), I ask who should be checking what these systems produce.
 
 ## Author’s Note
 In this article, I’ve discussed the crucial role that data science and automation can play in improving data quality within clinical trials. Drawing from my experience transitioning from biomarker development to clinical trial development, I’ve explored how these tools streamline processes, reduce errors, and accelerate trial timelines — ultimately benefiting both trial teams and patients. The insights shared are shaped by my ongoing work in the pharmaceutical industry, where interdisciplinary collaboration is essential to advancing innovative therapies. I welcome your feedback and thoughts on this topic. For more details or to connect with me, please visit my [personal page](https://andreagrioni.github.io/).

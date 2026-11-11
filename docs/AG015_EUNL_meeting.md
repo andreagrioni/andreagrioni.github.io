@@ -4,6 +4,8 @@
 
 *By Andrea Grioni*
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ---
 
 Some of the most important work in clinical development doesn't happen in a system. It happens in a room.
@@ -70,7 +72,7 @@ That conviction is hard to manufacture over email. It's almost easy in a room.
 
 ## The science it serves
 
-For the trial behind all of this, the design was just published. The [VICTORION-2 PREVENT design paper](https://doi.org/10.1016/j.ahj.2026.107493) was published online in the *American Heart Journal* in May 2026 — a Phase 3, randomized, double-blind, placebo-controlled, international study testing whether inclisiran reduces major adverse cardiovascular events in patients with established atherosclerotic disease who are already on high-intensity statins. The primary endpoint is three-point MACE: cardiovascular death, non-fatal heart attack, non-fatal stroke. The treatment is given as an injection on day one, at month three, and every six months after that.
+For the trial behind all of this, the design was just published. The [VICTORION-2 PREVENT design paper](https://doi.org/10.1016/j.ahj.2026.107493) was published online in the *American Heart Journal* in May 2026 — a Phase 3, randomized, double-blind, placebo-controlled, international study testing whether inclisiran (a PCSK9-targeting therapy I introduced in an [earlier primer on atherosclerosis](story.html?file=docs/AG010_intro_atherosclerosis.md)) reduces major adverse cardiovascular events in patients with established atherosclerotic disease who are already on high-intensity statins. The primary endpoint is three-point MACE: cardiovascular death, non-fatal heart attack, non-fatal stroke. The treatment is given as an injection on day one, at month three, and every six months after that.
 
 That last detail is quietly the whole challenge. Every six months. In the long stretches between those visits, life happens — people move, people change doctors, people drift. The paper is the skeleton of the experiment. The room, and the relationships in it, are the muscle that keeps it standing.
 
@@ -83,6 +85,10 @@ We tend to picture clinical research as something cold and procedural. Numbers, 
 ---
 
 > "You can't schedule a clinical event. You can only earn the trust that keeps someone answering the phone."
+
+---
+
+> **Follow-up:** [Who Will Run the Clinical Trial of the Future?](story.html?file=docs/AG016_clinical_trial_future.md), on how AI may change the way trials like this one are run, and by whom.
 
 ---
 

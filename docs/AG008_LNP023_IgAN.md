@@ -1,11 +1,15 @@
 # **IgA Nephropathy (IgAN) and the Promise of Iptacopan: Insights from a Phase 2 Clinical Trial**
 
+<mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
+
 ## **Glossary**
 - **Proteinuria**: The presence of excess proteins in the urine. It is often a sign of kidney damage.
 - **eGFR (estimated Glomerular Filtration Rate)**: A test that measures how well the kidneys are filtering blood. It's an estimate of the filtering capacity of the kidneys.
 - **Glomerulonephritis**: A type of kidney disease where the glomeruli, tiny filters in the kidneys, become inflamed, affecting the kidney's ability to filter waste and fluids.
 
 ## **Introduction**
+In my [previous article](story.html?file=docs/AG007_kidney_week_2023.md), I gave an overview of nephrology and IgA Nephropathy ahead of ASN Kidney Week 2023. Here, I focus on a specific treatment: iptacopan.
+
 IgA Nephropathy (IgAN), the most common form of glomerulonephritis, is characterized by the deposition of galactose-deficient IgA in the glomerular mesangium. With a global incidence of approximately 25 per million per year, it predominantly affects young adults. Alarmingly, around 15–40% of IgAN patients may progress to kidney failure within a decade or two post-diagnosis, emphasizing the urgent need for effective treatments.
 
 ## **Current Therapeutic Landscape**
@@ -37,7 +41,7 @@ The results from the **Phase 2 clinical trial** have shown that iptacopan can in
 
 
 ## **Further Insights into iptacopan Mode of Action in IgA Nephropathy Through Protein Profiling**
-IgA Nephropathy (IgAN) is in dire need of innovative therapeutic solutions. The Phase 2 clinical trial of iptacopan has shed light on promising avenues, hinting at a potential game-changer in the treatment landscape of IgAN. To delve deeper into its mechanism of action and the physiological modulations it induces, our dedicated team at Novartis Biomedical Research undertook an extensive protein profiling analysis using plasma and urine samples from the IgAN Phase 2 clinical trial participants. Our findings pinpointed specific protein modulations linked to key biological processes disrupted in IgAN. We're excited to present these insights at the American Society of Nephrology in November 2023. Below, you'll find a detailed presentation of our poster.
+IgA Nephropathy (IgAN) is in dire need of innovative therapeutic solutions. The Phase 2 clinical trial of iptacopan has shed light on promising avenues, hinting at a potential game-changer in the treatment landscape of IgAN. To delve deeper into its mechanism of action and the physiological modulations it induces, our dedicated team at Novartis Biomedical Research undertook an extensive protein profiling analysis using plasma and urine samples from the IgAN Phase 2 clinical trial participants, an approach similar to the one we used for the [remibrutinib trial in Sjögren's syndrome](story.html?file=docs/AG003_EULAR2023_remibrutinib_SjD.md). Our findings pinpointed specific protein modulations linked to key biological processes disrupted in IgAN. We're excited to present these insights at the American Society of Nephrology in November 2023. Below, you'll find a detailed presentation of our poster.
 
 ![Protein Profiling Poster](./img/ag008_img003.jpg)
 *Figure3: Poster presented at the American Society of Nephrology 2023. Deciphering the iptacopan mechanism of action through urine and plasma proteomics.*
@@ -51,5 +55,5 @@ The APPLAUSE-IgAN study, a Phase 3 clinical trial by Novartis, is evaluating the
 
 ## **Conclusion and Acknowledgments**
 
-In this article, I've delved deep into the realm of nephrology, with a spotlight on IgA Nephropathy, and underscored the importance of the forthcoming ASN Kidney Week 2023. The insights presented are grounded in scientific studies and publicly accessible datasets. This is the result of the collective efforts of many, from public institutions to Novartis, and it reflects the dedication of these individuals to develop and bring efficacious drugs to the market for the benefit of all patients. Your feedback and thoughts are immensely appreciated. For further details or to get in touch with me, please visit my [personal page](https://andreagrioni.github.io).
+In this article, I've focused on iptacopan and IgA Nephropathy, building on the [overview of nephrology](story.html?file=docs/AG007_kidney_week_2023.md) I wrote ahead of ASN Kidney Week 2023. The insights presented are grounded in scientific studies and publicly accessible datasets. This is the result of the collective efforts of many, from public institutions to Novartis, and it reflects the dedication of these individuals to develop and bring efficacious drugs to the market for the benefit of all patients. Your feedback and thoughts are immensely appreciated. For further details or to get in touch with me, please visit my [personal page](https://andreagrioni.github.io).
 
