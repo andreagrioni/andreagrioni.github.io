@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrea Grioni</title>
+    <link>https://andreagrioni.github.io/</link>
+    <description>Clinical development, AI and technology in clinical trials, and the journey from academia to industry.</description>
+    <language>en</language>
+    <atom:link href="https://andreagrioni.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Who Is the Human in the Loop?</title>
+      <link>https://andreagrioni.github.io/docs/AG017_human_in_the_loop.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG017_human_in_the_loop.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>There is an easy way to add AI to a clinical trial. Let the system draft the answer to a site query, the summary of an adverse event or the reconciliation of a dataset, and put a person at the end…</description>
+    </item>
+    <item>
+      <title>Who Will Run the Clinical Trial of the Future?</title>
+      <link>https://andreagrioni.github.io/docs/AG016_clinical_trial_future.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG016_clinical_trial_future.html</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>A clinical trial site has a question. It travels to the Clinical Research Associate in the country team, then on to the global trial team. Sometimes the answer is immediate. Other times someone has…</description>
+    </item>
+    <item>
+      <title>The Room Where the Experiment Lives</title>
+      <link>https://andreagrioni.github.io/docs/AG015_EUNL_meeting.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG015_EUNL_meeting.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Some of the most important work in clinical development doesn't happen in a system. It happens in a room.</description>
+    </item>
+    <item>
+      <title>Learning to Think Like a Clinical Development Professional: Eight Months In</title>
+      <link>https://andreagrioni.github.io/docs/AG014_clinical_development.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG014_clinical_development.html</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>When I joined Clinical Development as part of the clinical trial team, a move that began with the job rotation I wrote about in 2024, I expected the biggest challenge to be the workload — the…</description>
+    </item>
+    <item>
+      <title>From Academia to Pharma: What I Learned, What I Wish I Knew, and How You Can Succeed</title>
+      <link>https://andreagrioni.github.io/docs/AG013_FIR_presentation.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG013_FIR_presentation.html</guid>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
+      <description>Three weeks ago, I had the privilege of speaking at the Faces of Industrial Research (FIR) conference—a unique event that offers life-science students a glimpse into industrial research at Swiss…</description>
+    </item>
+    <item>
+      <title>Automation, Data Science, and Generative AI: Supercharging Data Quality in Clinical Trials</title>
+      <link>https://andreagrioni.github.io/docs/AG012_DS_AI_Aut_clinical_trials.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG012_DS_AI_Aut_clinical_trials.html</guid>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 GMT</pubDate>
+      <description>In my previous post, I explained why I chose a job rotation into clinical trial development. Now, I want to summarize a proof of concept of how I integrated data science, automation, and generative…</description>
+    </item>
+    <item>
+      <title>Driven by Curiosity: Why I Chose a Job Rotation into Clinical Trial Development</title>
+      <link>https://andreagrioni.github.io/docs/AG011_Driven_by_Curiosity.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG011_Driven_by_Curiosity.html</guid>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
+      <description>In biomarker development, our work typically comes into play at the later stages of the research pipeline, when a compound has already passed through preclinical development and is entering Phase I…</description>
+    </item>
+    <item>
+      <title>Introduction to Atherosclerosis and PCSK9 Inhibitors</title>
+      <link>https://andreagrioni.github.io/docs/AG010_intro_atherosclerosis.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG010_intro_atherosclerosis.html</guid>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+      <description>Atherosclerosis is a leading cause of cardiovascular diseases worldwide. Understanding its pathophysiology and exploring innovative treatment options like PCSK9 inhibitors are crucial for advancing…</description>
+    </item>
+    <item>
+      <title>Highlights from the American College of Rheumatology Conference</title>
+      <link>https://andreagrioni.github.io/docs/AG009_ACR2023_remarks.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG009_ACR2023_remarks.html</guid>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
+      <description>Introduction: The American College of Rheumatology's annual meeting, held from November 10th to 15th in San Diego, showcased groundbreaking research in rheumatology. Although I was not present, I am…</description>
+    </item>
+    <item>
+      <title>IgA Nephropathy (IgAN) and the Promise of Iptacopan: Insights from a Phase 2 Clinical Trial</title>
+      <link>https://andreagrioni.github.io/docs/AG008_LNP023_IgAN.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG008_LNP023_IgAN.html</guid>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
+      <description>In my previous article, I gave an overview of nephrology and IgA Nephropathy ahead of ASN Kidney Week 2023. Here, I focus on a specific treatment: iptacopan.</description>
+    </item>
+    <item>
+      <title>Nephrology: The Study of Kidneys and Kidney Week 2023</title>
+      <link>https://andreagrioni.github.io/docs/AG007_kidney_week_2023.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG007_kidney_week_2023.html</guid>
+      <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
+      <description>Originating from the ancient Greek word 'nephros' meaning kidney, nephrology is a specialized medical discipline dedicated to the diagnosis, treatment, and management of kidney diseases. This field…</description>
+    </item>
+    <item>
+      <title>Dreamlet: A Powerful Tool for Single Cell RNA-Seq Analysis with Linear Mixed Effect Models</title>
+      <link>https://andreagrioni.github.io/docs/AG005_dreamlet_ad.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG005_dreamlet_ad.html</guid>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate>
+      <description>After the talks on single cell sequencing I summarised in my GEMSeq conference notes, I wanted to go hands-on. This tutorial walks through one of the tools that makes large single cell studies with…</description>
+    </item>
+    <item>
+      <title>Single Cell Sequencing in Cardiovascular Diseases: Conference Notes</title>
+      <link>https://andreagrioni.github.io/docs/AG002_GEMseq_notes.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG002_GEMseq_notes.html</guid>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 GMT</pubDate>
+      <description>Attending the 5th Graz Expert Meeting for single cell RNA sequencing in Cardiovascular Science (GEMSeq) for the first time was an incredible experience! I had the opportunity to learn about the…</description>
+    </item>
+    <item>
+      <title>Understanding Sjögren's Syndrome: Current Treatments and the Road Ahead</title>
+      <link>https://andreagrioni.github.io/docs/AG004_sjd_treatment_strategy.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG004_sjd_treatment_strategy.html</guid>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
+      <description>Introduction: Sjögren’s Syndrome (SS) is a complex autoimmune disorder that primarily affects the body's moisture-producing glands. Characterized by symptoms like severe fatigue, dryness, pain, and…</description>
+    </item>
+    <item>
+      <title>EULAR2023 Spotlight: Molecular Discoveries from the Phase 2 Clinical Trial of Remibrutinib in Sjögren's Syndrome</title>
+      <link>https://andreagrioni.github.io/docs/AG003_EULAR2023_remibrutinib_SjD.html</link>
+      <guid isPermaLink="true">https://andreagrioni.github.io/docs/AG003_EULAR2023_remibrutinib_SjD.html</guid>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+      <description>I’m excited to share the findings from our recent poster presentation at the EULAR2023 conference! Our research focused on the exploratory biomarker analysis conducted on the remibrutinib Phase 2…</description>
+    </item>
+  </channel>
+</rss>

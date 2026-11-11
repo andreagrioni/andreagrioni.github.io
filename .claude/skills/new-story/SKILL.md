@@ -80,7 +80,9 @@ npm install   # first time only
 npm run build
 ```
 
-This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too) and rewrites any `story.html?file=` links in `index.html`.
+This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too), `sitemap.xml` and `feed.xml` (RSS), and rewrites any `story.html?file=` links in `index.html`. The timeline date must look like `Nov 2026` (it becomes the RSS publication date).
+
+Safety net: the GitHub Action `.github/workflows/rebuild-stories.yml` runs the same build after every push to `main` and commits the regenerated files back if they were stale. Still run the build locally so you can preview, and so the commit is complete.
 
 New images: keep them web-sized. Photos and screenshots should be JPEG, at most ~1600px wide (posters up to ~2400px), ideally under 500 KB. For example: `sips -Z 1600 -s format jpeg -s formatOptions 82 in.png --out docs/img/ag016_img001.jpg`.
 
@@ -95,7 +97,7 @@ New images: keep them web-sized. Photos and screenshots should be JPEG, at most 
 
 Stop after step 7 and show the user a summary. Pushing to `main` makes the story public on GitHub Pages, so only commit and push when the user explicitly asks.
 
-1. Stage only the story files: the new `docs/AG<NNN>_<Slug>.md`, its `docs/img/ag<NNN>_*` images, `index.html`, and the regenerated `docs/AG*.html` pages. Never stage `.DS_Store`, the user's drafts folder (e.g. `new_story/`), or unrelated changes.
+1. Stage only the story files: the new `docs/AG<NNN>_<Slug>.md`, its `docs/img/ag<NNN>_*` images, `index.html`, the regenerated `docs/AG*.html` pages, `sitemap.xml` and `feed.xml`. Never stage `.DS_Store`, the user's drafts folder (e.g. `new_story/`), or unrelated changes.
 2. Commit with the message:
 
    ```

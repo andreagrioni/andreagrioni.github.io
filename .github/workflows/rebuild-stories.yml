@@ -1,0 +1,58 @@
+# Safety net for "npm run build": after every push to main that touches a
+# story or the timeline, rebuild the static story pages, sitemap and RSS feed.
+# If the committed pages were out of date, commit the regenerated files back
+# to main and ask GitHub Pages to redeploy.
+name: Rebuild story pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/*.md'
+      - 'index.html'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: rebuild-stories
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Commit regenerated pages if they changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Story pages are up to date."
+            exit 0
+          fi
+          git status --short
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/*.html index.html sitemap.xml feed.xml
+          git commit -m "Rebuild story pages (npm run build)"
+          git push
+          # Pushes made with the workflow token may not trigger a Pages deploy on their own.
+          gh api -X POST "repos/$REPO/pages/builds" \
+            || echo "Could not request a Pages build; it will redeploy on the next push."

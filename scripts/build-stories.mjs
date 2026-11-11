@@ -6,6 +6,7 @@
 //   - <title>, meta description, canonical URL, Open Graph / Twitter tags
 //   - the publication date and external versions (Medium, LinkedIn, ...)
 //   - previous / next links in chronological order
+// plus sitemap.xml and feed.xml (RSS) at the site root.
 // It also rewrites "story.html?file=docs/X.md" links in index.html to the
 // static pages. Run with:  npm run build
 
@@ -106,6 +107,7 @@ function renderStory(story, prev, next) {
   const url = `${SITE}/docs/${story.id}.html`;
   const title = escapeHtml(story.title);
   const desc = escapeHtml(description);
+  story.description = description; // reused by the RSS feed
 
   const navLink = (s, rel, label) =>
     s
@@ -132,6 +134,7 @@ function renderStory(story, prev, next) {
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${desc}">
   <meta name="twitter:image" content="${escapeHtml(image)}">
+  <link rel="alternate" type="application/rss+xml" title="Andrea Grioni" href="../feed.xml">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/story.css">
 </head>
@@ -172,6 +175,57 @@ ${body}
 `;
 }
 
+// ---------------------------------------------------------------- sitemap & feed
+
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
+// Timeline dates look like "Nov 2026"; use the first of the month.
+function pubDate(label) {
+  const m = label.match(/^([A-Za-z]{3})[a-z]*\s+(\d{4})$/);
+  if (!m) throw new Error(`Unrecognised timeline date "${label}" (expected e.g. "Nov 2026")`);
+  const month = MONTHS.indexOf(m[1].toLowerCase());
+  if (month < 0) throw new Error(`Unrecognised month in "${label}"`);
+  return new Date(Date.UTC(Number(m[2]), month, 1));
+}
+
+function buildSitemap(stories) {
+  const urls = [`${SITE}/`, ...stories.map((s) => `${SITE}/docs/${s.id}.html`)];
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}
+</urlset>
+`;
+}
+
+function buildFeed(stories) {
+  const newestFirst = [...stories].reverse();
+  const items = newestFirst
+    .map((s) => {
+      const url = `${SITE}/docs/${s.id}.html`;
+      return `    <item>
+      <title>${escapeHtml(s.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <pubDate>${pubDate(s.date).toUTCString()}</pubDate>
+      <description>${escapeHtml(s.description)}</description>
+    </item>`;
+    })
+    .join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrea Grioni</title>
+    <link>${SITE}/</link>
+    <description>Clinical development, AI and technology in clinical trials, and the journey from academia to industry.</description>
+    <language>en</language>
+    <atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>${pubDate(newestFirst[0].date).toUTCString()}</lastBuildDate>
+${items}
+  </channel>
+</rss>
+`;
+}
+
 // ---------------------------------------------------------------- main
 
 const indexPath = join(ROOT, 'index.html');
@@ -192,4 +246,7 @@ if (updatedIndex !== indexHtml) {
   writeFileSync(indexPath, updatedIndex);
   console.log('updated index.html links to static story pages');
 }
+writeFileSync(join(ROOT, 'sitemap.xml'), buildSitemap(stories));
+writeFileSync(join(ROOT, 'feed.xml'), buildFeed(stories));
+console.log('built sitemap.xml and feed.xml');
 console.log(`${stories.length} stories`);
