@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
   <title>Andrea Grioni</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/story.css">
+  <script>
+    // Old story URLs (story.html?file=docs/AG###_slug.md) now live at
+    // docs/AG###_slug.html. Only redirect to files matching that pattern.
+    (function () {
+      var file = new URLSearchParams(window.location.search).get('file') || '';
+      var m = file.match(/^docs\/(AG\d{3}_[A-Za-z0-9_-]+)\.md$/);
+      if (m) window.location.replace('docs/' + m[1] + '.html' + window.location.hash);
+    })();
+  </script>
 </head>
 <body>
 
@@ -24,56 +34,13 @@
 
 <main>
   <div class="container story-container">
-    <a href="index.html#timeline" class="back-link">&#8592; All Stories</a>
-    <article id="story-body" class="prose">
-      <p class="story-status">Loading&hellip;</p>
-    </article>
+    <p class="story-status">Story not found. See <a href="index.html#timeline">all stories</a>.</p>
   </div>
 </main>
 
 <footer>
   <p>Copyright &copy; 2026 Andrea Grioni</p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const file = params.get('file');
-  const body = document.getElementById('story-body');
-
-  if (!file) {
-    body.innerHTML = '<p class="story-status">No story specified.</p>';
-  } else {
-    fetch(file)
-      .then(res => {
-        if (!res.ok) throw new Error('not found');
-        return res.text();
-      })
-      .then(md => {
-        const html = marked.parse(md);
-
-        // Fix relative image/src paths to be relative to the docs folder
-        const baseDir = file.substring(0, file.lastIndexOf('/') + 1);
-        body.innerHTML = html.replace(
-          /src="(?!https?:\/\/|\/|data:)(\.\/)?/g,
-          `src="${baseDir}`
-        );
-
-        // Open external links in a new tab
-        body.querySelectorAll('a[href^="http"]').forEach(a => {
-          a.setAttribute('target', '_blank');
-          a.setAttribute('rel', 'noopener noreferrer');
-        });
-
-        // Set page title from the first h1
-        const h1 = body.querySelector('h1');
-        if (h1) document.title = h1.textContent + ' | Andrea Grioni';
-      })
-      .catch(() => {
-        body.innerHTML = '<p class="story-status">Could not load this story. If you\'re opening this file directly, run it through a local server (e.g. <code>python3 -m http.server</code>).</p>';
-      });
-  }
-</script>
 
 </body>
 </html>

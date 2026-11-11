@@ -1,0 +1,11 @@
+{
+  "name": "andreagrioni.github.io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-stories.mjs"
+  },
+  "devDependencies": {
+    "marked": "^12.0.2"
+  }
+}

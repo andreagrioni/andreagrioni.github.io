@@ -213,3 +213,53 @@
     font-size: 0.8rem;
   }
 }
+
+/* Date and external versions under the title */
+.prose .story-meta {
+  margin: -0.25rem 0 1.5rem 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Previous / next story links */
+.story-nav {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.story-nav a {
+  flex: 1 1 0;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.story-nav a span {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.story-nav a:hover {
+  color: var(--accent);
+}
+
+.story-nav-next {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .story-nav {
+    flex-direction: column;
+  }
+  .story-nav-next {
+    text-align: left;
+  }
+}

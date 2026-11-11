@@ -1,11 +1,11 @@
 ---
 name: new-story
-description: Add a new story/blog post to the website — creates docs/AG###_<slug>.md, places images in docs/img/, and adds the entry to the timeline in index.html. Use when the user wants to publish, add, or post a new story, article, or post.
+description: Add a new story/blog post to the website — creates docs/AG###_<slug>.md, places images in docs/img/, adds the entry to the timeline in index.html, and builds the static story page. Use when the user wants to publish, add, or post a new story, article, or post.
 ---
 
 # Add a new story
 
-Stories are Markdown files in `docs/`, rendered by `story.html?file=...`, and listed in the git-log style timeline in `index.html`.
+Stories are Markdown files in `docs/`, listed in the git-log style timeline in `index.html`. `npm run build` (scripts/build-stories.mjs) turns each one into a static page `docs/AG###_<slug>.html` with link-preview metadata, the date, external versions and previous/next links. `story.html?file=...` only redirects old links to those pages. Never edit the generated `.html` files by hand.
 
 ## 1. Gather inputs
 
@@ -59,7 +59,7 @@ Find the `<div class="gl-role">` for the chosen role, then insert a new `<li>` a
                 <span class="story-date">Nov 2026</span>
                 <span class="story-title"><Title></span>
                 <span class="story-links">
-                  <a href="story.html?file=docs/AG016_<Slug>.md" class="pub-link">Read</a>
+                  <a href="docs/AG016_<Slug>.html" class="pub-link">Read</a>
                   <a href="https://medium.com/@grioni.andrea/..." target="_blank" class="pub-link">Medium</a>
                   <a href="https://www.linkedin.com/pulse/..." target="_blank" class="pub-link">LinkedIn</a>
                 </span>
@@ -68,21 +68,34 @@ Find the `<div class="gl-role">` for the chosen role, then insert a new `<li>` a
 
 - Include the Medium/LinkedIn links only if provided, in that order (Read, Medium, LinkedIn), always with `target="_blank"`.
 - Strip tracking query strings from the URLs (e.g. `?trackingId=...`) and any trailing `/`.
-- If an external link arrives after the story was added, add it to the existing `<li>` rather than creating a new entry.
+- If an external link arrives after the story was added, add it to the existing `<li>` rather than creating a new entry, then rebuild (step 6).
+- The timeline entry is the source of truth for the page's title, date and "Also on" links.
 
 Escape HTML special characters in the title (`&` → `&amp;`, `–` → `&ndash;`, etc.).
 
-## 6. Verify
+## 6. Build the story pages
+
+```bash
+npm install   # first time only
+npm run build
+```
+
+This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too) and rewrites any `story.html?file=` links in `index.html`.
+
+New images: keep them web-sized. Photos and screenshots should be JPEG, at most ~1600px wide (posters up to ~2400px), ideally under 500 KB. For example: `sips -Z 1600 -s format jpeg -s formatOptions 82 in.png --out docs/img/ag016_img001.jpg`.
+
+## 7. Verify
 
 - The new `.md` file and all referenced images exist at the paths used.
 - `index.html` link path matches the filename exactly (case-sensitive on GitHub Pages).
-- Optionally preview: `python3 -m http.server 8000` and open `http://localhost:8000/story.html?file=docs/AG<NNN>_<Slug>.md`.
+- `docs/AG<NNN>_<Slug>.html` exists and its `<meta name="description">` reads well (it is the first real paragraph of the story).
+- Optionally preview: `python3 -m http.server 8000` and open `http://localhost:8000/docs/AG<NNN>_<Slug>.html`.
 
-## 7. Publish (only when the user asks, e.g. "publish it")
+## 8. Publish (only when the user asks, e.g. "publish it")
 
-Stop after step 6 and show the user a summary. Pushing to `main` makes the story public on GitHub Pages, so only commit and push when the user explicitly asks.
+Stop after step 7 and show the user a summary. Pushing to `main` makes the story public on GitHub Pages, so only commit and push when the user explicitly asks.
 
-1. Stage only the story files: the new `docs/AG<NNN>_<Slug>.md`, its `docs/img/ag<NNN>_*` images, and `index.html`. Never stage `.DS_Store`, the user's drafts folder (e.g. `new_story/`), or unrelated changes.
+1. Stage only the story files: the new `docs/AG<NNN>_<Slug>.md`, its `docs/img/ag<NNN>_*` images, `index.html`, and the regenerated `docs/AG*.html` pages. Never stage `.DS_Store`, the user's drafts folder (e.g. `new_story/`), or unrelated changes.
 2. Commit with the message:
 
    ```
@@ -92,4 +105,4 @@ Stop after step 6 and show the user a summary. Pushing to `main` makes the story
 3. `git pull --rebase origin main`, then `git push origin main`. If the pull has conflicts or the push is rejected, stop and tell the user — never force-push.
 4. Tell the user the live URLs (they update within a minute or two):
    - `https://andreagrioni.github.io/#timeline`
-   - `https://andreagrioni.github.io/story.html?file=docs/AG<NNN>_<Slug>.md`
+   - `https://andreagrioni.github.io/docs/AG<NNN>_<Slug>.html`
