@@ -2,6 +2,8 @@
 
 <mark > UPDATE 20261111:</mark> Added links to related articles on this blog.
 
+<mark > UPDATE 20261122:</mark> This proof of concept has since grown into an AI system for clinical data review that the clinical trial team uses every day, and it is now scaling across the organisation. I am its Clinical Development Product Owner.
+
 In my [previous post](story.html?file=docs/AG011_Driven_by_Curiosity.md), I explained why I chose a job rotation into clinical trial development. Now, I want to summarize a proof of concept of how I integrated data science, automation, and generative AI (genAI) during my job rotation in clinical development, showcasing how these technologies can significantly improve data quality and boost the overall efficiency of the clinical trial team.
 ## Monitoring and Ensuring Data Accuracy: The Clinical Trial Team’s Daily Task
 A significant part of the clinical trial team’s daily work involves monitoring the data entered into the case report forms (CRFs) by principal investigators at each site, which could be hospitals or clinics. Every time a patient visits, new data is added to the CRF, including information on adverse events, vital signs (such as weight, blood pressure), laboratory results, and clinical endpoints. For instance, in a trial related to diabetes, clinical endpoints could include glucose levels, while for a trial on renal failure, it might be kidney function markers.
