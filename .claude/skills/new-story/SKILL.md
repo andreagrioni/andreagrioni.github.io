@@ -1,6 +1,6 @@
 ---
 name: new-story
-description: Add a new story/blog post to the website — creates docs/AG###_<slug>.md, places images in docs/img/, adds the entry to the timeline in index.html, and builds the static story page. Use when the user wants to publish, add, or post a new story, article, or post.
+description: Add a new story/blog post to the website — creates docs/AG###_<slug>.md, places images in docs/img/, adds the entry to the timeline in index.html (and to the homepage "Featured" list when it is about AI or technology in clinical development), and builds the static story page. Use when the user wants to publish, add, or post a new story, article, or post.
 ---
 
 # Add a new story
@@ -68,10 +68,28 @@ Find the `<div class="gl-role">` for the chosen role, then insert a new `<li>` a
 
 - Include the Medium/LinkedIn links only if provided, in that order (Read, Medium, LinkedIn), always with `target="_blank"`.
 - Strip tracking query strings from the URLs (e.g. `?trackingId=...`) and any trailing `/`.
-- If an external link arrives after the story was added, add it to the existing `<li>` rather than creating a new entry, then rebuild (step 6).
+- If an external link arrives after the story was added, add it to the existing `<li>` rather than creating a new entry (in the Featured list too, if the story is there; see 5b), then rebuild (step 6).
 - The timeline entry is the source of truth for the page's title, date and "Also on" links.
 
 Escape HTML special characters in the title (`&` → `&amp;`, `–` → `&ndash;`, etc.).
+
+## 5b. Feature AI-in-clinical-development stories
+
+The homepage has a `<section id="featured">` ("Featured: AI in Clinical Development") above the timeline. Every story whose main subject is **AI, data science, automation or digital technology in clinical development, clinical trials or drug development** goes there as well, automatically, without asking. Examples: AG012 (automation and generative AI for data quality), AG014, AG016, AG017, AG018. Stories on other subjects (disease primers, conference science notes, career advice) do not. If a story is borderline, add it and mention that in the summary so the user can remove it.
+
+Insert a copy of the same `<li>` as the **first** item of the `<ul class="gl-stories">` inside `<section id="featured">` (newest first), with the same title, date and links as the timeline entry, matching that section's indentation (8 spaces for `<li>`):
+
+```html
+        <li>
+          <span class="story-date">Nov 2026</span>
+          <span class="story-title"><Title></span>
+          <span class="story-links">
+            <a href="docs/AG016_<Slug>.html" class="pub-link">Read</a>
+          </span>
+        </li>
+```
+
+The build reads only `<section id="timeline">`, so it never updates the Featured list: whenever a featured story's title, date or Medium/LinkedIn links change, update both entries by hand. Say in the step-7 summary whether the story was featured.
 
 ## 6. Build the story pages
 
@@ -89,7 +107,7 @@ New images: keep them web-sized. Photos and screenshots should be JPEG, at most 
 ## 7. Verify
 
 - The new `.md` file and all referenced images exist at the paths used.
-- `index.html` link path matches the filename exactly (case-sensitive on GitHub Pages).
+- `index.html` link path matches the filename exactly (case-sensitive on GitHub Pages), in the timeline and, if featured, in the Featured list.
 - `docs/AG<NNN>_<Slug>.html` exists and its `<meta name="description">` reads well (it is the first real paragraph of the story).
 - Optionally preview: `python3 -m http.server 8000` and open `http://localhost:8000/docs/AG<NNN>_<Slug>.html`.
 
