@@ -1,6 +1,6 @@
 ![](./img/ag018_img000.jpg)
 
-# The Bottleneck Is Moving to the Clinic
+# When Patients Are the Scarce Resource: Where Should AI Help First?
 
 *By Andrea Grioni*
 
@@ -14,7 +14,7 @@ It is worth being precise about what AI has proven. As far as I can find, no dru
 
 The capacity problem is not new: depending on the field and the definition, between a fifth and a half of trials fall short of their recruitment targets ([ESMO Open, 2024](https://doi.org/10.1016/j.esmoop.2024.103603); [ASH, 2024](https://ash.confex.com/ash/2024/webprogram/Paper207446.html)). What is new is that the pressure on that capacity is about to rise.
 
-So the question is a product question, not a technology question: if clinical capacity is the constraint, what should we build first?
+So the question is a product question, not a technology question: if clinical capacity, and above all patients, is the constraint, where should AI help first?
 
 ## What is being built
 
