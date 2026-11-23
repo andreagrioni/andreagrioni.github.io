@@ -53,9 +53,13 @@ When I think about what belongs on a roadmap, these are the questions I keep com
 - *How many patients does a trial need?* Prognostic models built on historical data, often called digital twins of trial participants, can make trials smaller without inflating the risk of a false-positive result. The EMA qualified one such method in 2022 ([EMA, 2022](https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/qualification-opinion-prognostic-covariate-adjustment-procovatm_en.pdf)).
 - *Where will they come from?* Models trained on thousands of past trials predict enrolment rates ([Bieganek et al., 2022](https://doi.org/10.1371/journal.pone.0263193)) and rank sites by expected recruitment ([Hulstaert et al., 2024](https://doi.org/10.1371/journal.pone.0300109)).
 
+![Diagram: four questions (which molecules deserve a trial, who can take part, how many patients are needed, where they will come from) all feed into protocol design.](./img/ag018_img001.jpg)
+
 Protocol design is where these questions meet. Every assessment added to a protocol is a cost that participants pay at every visit, sometimes for years, and retention starts with study design ([The Room Where the Experiment Lives](story.html?file=docs/AG015_EUNL_meeting.md)). None of these models should make the call; each can make it better informed. This work is also harder than the "now" list: feedback loops are long, historical data carries historical biases, and the decisions it informs are among the most consequential in a programme. That is a reason to start carefully, not a reason to wait.
 
 **Not yet: AI that makes the decision.** Ethics approvals, endpoint adjudication, eligibility calls. Not because AI could never help with them, but because accountability has to stay with a person who can explain the decision. The ethics-review example got the division right: AI prepares the package; people decide.
+
+![Summary: five questions before building, and the verdict: now, AI that focuses attention on data we already have; next, AI that helps decide how patients are spent; not yet, AI that makes the decision.](./img/ag018_img002.jpg)
 
 ## Scale what works
 
