@@ -6,7 +6,7 @@
 
 ---
 
-At the Festival of Biologics in Basel this October, a speaker from Massachusetts General Hospital showed a slide with three columns. The first was AI supply: models that can evaluate around a billion molecules and put forward thousands of candidates. The second was clinical capacity: the patients, sites and investigators needed to test them. The third was regulatory load: the evidence every one of those candidates will eventually need. The slide's summary fitted on a single line: candidates scale, capacity remains constrained.
+At the [Festival of Biologics](https://www.terrapinn.com/conference/festival-of-biologics/index.stm) in Basel this October, a speaker from Massachusetts General Hospital showed a slide with three columns. The first was AI supply: models that can evaluate around a billion molecules and put forward thousands of candidates. The second was clinical capacity: the patients, sites and investigators needed to test them. The third was regulatory load: the evidence every one of those candidates will eventually need. The slide's summary fitted on a single line: candidates scale, capacity remains constrained.
 
 It is the slide I have thought about most since. If AI keeps filling the top of the pipeline faster than trials can test what it finds, the bottleneck moves to the clinic. And then the most valuable AI in pharma over the next few years may not be the AI that finds molecules. It may be the AI that helps the clinic absorb them, and helps decide which of them deserve its patients.
 
@@ -18,7 +18,7 @@ So the question I want to ask is a product question, not a technology question. 
 
 ## What is being built
 
-At BioTechX this autumn, pharma companies, technology providers and academic groups showed tools aimed at exactly this problem. Three examples stayed with me.
+At [BioTechX](https://www.terrapinn.com/conference/biotechx/index.stm) this autumn, pharma companies, technology providers and academic groups showed tools aimed at exactly this problem. Three examples stayed with me.
 
 - **Ethics review.** AI that organises a trial submission and highlights possible gaps before the ethics committee looks at it. The committee still reviews and decides. No automated approvals or rejections.
 - **Clinical data review.** Agentic AI in clinical data workflows, taken from proof of concept to GxP validation. The system checks data, highlights discrepancies and summarises the evidence; clinical experts interpret it and decide what to do.
@@ -44,7 +44,7 @@ When I think about what belongs on a roadmap, these are the questions I keep com
 
 ## Now, next, not yet
 
-**Now: AI that focuses attention on data we already have.** Data review, deviation patterns, safety triage, and answers to site questions that point to the exact passage in the current protocol, as I sketched in [Who Will Run the Clinical Trial of the Future?](story.html?file=docs/AG016_clinical_trial_future.md) The data exists, every output can be checked against its source, and the gain is capacity: expert time moves from searching to judging.
+**Now: AI that focuses attention on data we already have.** Data review, deviation patterns, safety triage, and answers to site questions that point to the exact passage in the current protocol, as I sketched in [Who Will Run the Clinical Trial of the Future?](story.html?file=docs/AG016_clinical_trial_future.md) I first described this kind of quality layer in [Learning to Think Like a Clinical Development Professional](story.html?file=docs/AG014_clinical_development.md). The data exists, every output can be checked against its source, and the gain is capacity: expert time moves from searching to judging.
 
 **Next: AI that helps decide how patients are spent.** If patients are the scarce resource, the most valuable AI may be the AI that helps decide where they go. That decision runs through four questions, and each already has published work behind it.
 
@@ -63,7 +63,7 @@ At the same conference, a pharma venture investor described how the industry is 
 
 Who builds is part of that decision. In *AI for Good*, Josh Tyrangiel describes how Tomas Mihaljevic, the CEO of Cleveland Clinic, sees the two ways health-care organisations usually fail at digital transformation. In the first, keen internal staff are set loose building products of their own. "We have not developed a single product that anyone has ever used," Mihaljevic says. In the second, executives meet their counterparts at Microsoft or Google, agree on areas to collaborate, and nothing happens: "No one owns the initiative." What has worked instead is taking problems inside the clinic to AI partners with "a relatively narrow field of focus", often smaller companies that need Cleveland Clinic more than it needs them, without ever becoming a passive customer. The clinic deploys AI around its critical processes rather than the other way round, and its clinicians work directly with the technical teams to design, test and implement. As Tyrangiel puts it: "Nothing gets a green light without a lengthy pilot."
 
-Having built prototypes from inside a clinical team myself, I read the first failure mode as a warning rather than a verdict. A prototype built with its users is often the fastest way to understand a problem. But the prototype is not the product. Scaling needs an owner, the right partner for the job, and a path to validation, and every tool that scales takes support, training and the attention of the people who use it.
+Having built prototypes from inside a clinical team myself ([the first one started as a proof of concept in 2024](story.html?file=docs/AG012_DS_AI_Aut_clinical_trials.md)), I read the first failure mode as a warning rather than a verdict. A prototype built with its users is often the fastest way to understand a problem. But the prototype is not the product. Scaling needs an owner, the right partner for the job, and a path to validation, and every tool that scales takes support, training and the attention of the people who use it.
 
 If the bottleneck is moving to the clinic, the scarce resource is not ideas for AI. It is the judgement to choose the few that deserve to scale, and the discipline to stop the rest. In [Who Will Run the Clinical Trial of the Future?](story.html?file=docs/AG016_clinical_trial_future.md), I described AI as an attention-allocation technology for clinical experts. The same holds one level up: a portfolio of AI tools is an attention problem too.
 
