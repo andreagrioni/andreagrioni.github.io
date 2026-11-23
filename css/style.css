@@ -260,6 +260,23 @@ section p:last-child {
   color: var(--text);
 }
 
+/* "New" badge on the newest story; the class is set by scripts/build-stories.mjs */
+.gl-stories li.is-new .story-title::after {
+  content: 'New';
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 1px 7px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #ffffff;
+  background: var(--accent);
+  border-radius: 999px;
+  vertical-align: 1px;
+}
+
 .story-links {
   display: flex;
   gap: 0.3rem;

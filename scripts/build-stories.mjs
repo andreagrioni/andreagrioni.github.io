@@ -8,7 +8,9 @@
 //   - previous / next links in chronological order
 // plus sitemap.xml and feed.xml (RSS) at the site root.
 // It also rewrites "story.html?file=docs/X.md" links in index.html to the
-// static pages. Run with:  npm run build
+// static pages, and marks the newest story (the first timeline entry) with
+// class="is-new" in index.html, which css/style.css shows as a "New" badge.
+// Run with:  npm run build
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -47,7 +49,7 @@ function readTimeline(indexHtml) {
   const section = indexHtml.slice(start, end);
 
   const stories = [];
-  for (const [, li] of section.matchAll(/<li>([\s\S]*?)<\/li>/g)) {
+  for (const [, li] of section.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)) {
     const read = li.match(/href="([^"]+)"[^>]*>Read</);
     const m = read && read[1].match(STORY_RE);
     if (!m) continue; // external-only entries (e.g. LinkedIn-only posts)
@@ -227,6 +229,17 @@ ${items}
 `;
 }
 
+// ---------------------------------------------------------------- "New" badge
+
+// Give the newest story's <li> class="is-new" everywhere it is listed on the
+// homepage (timeline and Featured), and remove it from every other entry.
+function markNewest(indexHtml, newestId) {
+  const cleared = indexHtml.replace(/<li class="is-new">/g, '<li>');
+  return cleared.replace(/<li>(\s*<span class="story-date">[\s\S]*?<\/li>)/g, (whole, inner) =>
+    inner.includes(`docs/${newestId}.html"`) ? `<li class="is-new">${inner}` : whole
+  );
+}
+
 // ---------------------------------------------------------------- main
 
 const indexPath = join(ROOT, 'index.html');
@@ -239,13 +252,14 @@ stories.forEach((story, i) => {
   console.log(`built docs/${story.id}.html`);
 });
 
-const updatedIndex = indexHtml.replace(
+let updatedIndex = indexHtml.replace(
   /href="story\.html\?file=docs\/(AG\d{3}_[A-Za-z0-9_-]+)\.md"/g,
   'href="docs/$1.html"'
 );
+if (stories.length) updatedIndex = markNewest(updatedIndex, stories[stories.length - 1].id);
 if (updatedIndex !== indexHtml) {
   writeFileSync(indexPath, updatedIndex);
-  console.log('updated index.html links to static story pages');
+  console.log('updated index.html (static story links, "New" badge)');
 }
 writeFileSync(join(ROOT, 'sitemap.xml'), buildSitemap(stories));
 writeFileSync(join(ROOT, 'feed.xml'), buildFeed(stories));

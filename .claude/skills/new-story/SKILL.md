@@ -100,6 +100,8 @@ npm run build
 
 This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too), `sitemap.xml` and `feed.xml` (RSS), and rewrites any `story.html?file=` links in `index.html`. The timeline date must look like `Nov 2026` (it becomes the RSS publication date).
 
+The build also moves the homepage **"New" badge**: it gives the newest story's `<li>` (the first timeline entry) `class="is-new"`, in the timeline and in Featured, and removes the class from every other entry; `css/style.css` draws the badge. So always write new entries as a plain `<li>`, never add or remove `is-new` by hand, and keep the badge out of the title text.
+
 Safety net: the GitHub Action `.github/workflows/rebuild-stories.yml` runs the same build after every push to `main` and commits the regenerated files back if they were stale. Still run the build locally so you can preview, and so the commit is complete.
 
 New images: keep them web-sized. Photos and screenshots should be JPEG, at most ~1600px wide (posters up to ~2400px), ideally under 500 KB. For example: `sips -Z 1600 -s format jpeg -s formatOptions 82 in.png --out docs/img/ag016_img001.jpg`.
