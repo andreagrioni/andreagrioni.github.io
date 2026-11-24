@@ -182,13 +182,14 @@ ${body}
 
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
-// Timeline dates look like "Nov 2026"; use the first of the month.
+// Timeline dates look like "22 Nov 2026" (weekly posts) or "Nov 2026" (older
+// monthly posts, which use the first of the month).
 function pubDate(label) {
-  const m = label.match(/^([A-Za-z]{3})[a-z]*\s+(\d{4})$/);
-  if (!m) throw new Error(`Unrecognised timeline date "${label}" (expected e.g. "Nov 2026")`);
-  const month = MONTHS.indexOf(m[1].toLowerCase());
+  const m = label.match(/^(?:(\d{1,2})\s+)?([A-Za-z]{3})[a-z]*\s+(\d{4})$/);
+  if (!m) throw new Error(`Unrecognised timeline date "${label}" (expected e.g. "22 Nov 2026" or "Nov 2026")`);
+  const month = MONTHS.indexOf(m[2].toLowerCase());
   if (month < 0) throw new Error(`Unrecognised month in "${label}"`);
-  return new Date(Date.UTC(Number(m[2]), month, 1));
+  return new Date(Date.UTC(Number(m[3]), month, m[1] ? Number(m[1]) : 1));
 }
 
 function buildSitemap(stories) {

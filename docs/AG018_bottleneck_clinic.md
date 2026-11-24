@@ -1,10 +1,17 @@
 ![](./img/ag018_img000.jpg)
 
-# When Patients Are the Scarce Resource: Where Should AI Help First?
+# If the Bottleneck Is Moving to the Clinic: Where Should AI Help First?
 
 *By Andrea Grioni*
 
 ---
+
+> **TL;DR**
+>
+> - AI can now put forward far more drug candidates than trials can test. If that continues, the bottleneck moves to the clinic: patients, sites and investigators.
+> - So AI in clinical development and operations should be judged by what it does for that capacity. Five questions help: does it change a decision, can it be validated for its use, does it remove a step, is the data ready, and who acts on the output?
+> - **Now:** AI that focuses expert attention on data we already have. **Next:** AI that helps decide how patients are spent. **Not yet:** AI that makes the decision.
+> - The scarce skill is choosing the few tools worth scaling, and stopping the rest.
 
 At the [Festival of Biologics](https://www.terrapinn.com/conference/festival-of-biologics/index.stm) in Basel this October, a speaker from Massachusetts General Hospital showed a slide with three columns. The first was AI supply: models that can evaluate around a billion molecules and put forward thousands of candidates. The second was clinical capacity: the patients, sites and investigators needed to test them. The third was regulatory load: the evidence every one of those candidates will eventually need. The slide's summary fitted on a single line: candidates scale, capacity remains constrained.
 

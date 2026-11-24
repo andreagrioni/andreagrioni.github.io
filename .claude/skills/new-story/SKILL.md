@@ -56,7 +56,7 @@ Find the `<div class="gl-role">` for the chosen role, then insert a new `<li>` a
 
 ```html
               <li>
-                <span class="story-date">Nov 2026</span>
+                <span class="story-date">22 Nov 2026</span>
                 <span class="story-title"><Title></span>
                 <span class="story-links">
                   <a href="docs/AG016_<Slug>.html" class="pub-link">Read</a>
@@ -81,7 +81,7 @@ Insert a copy of the same `<li>` as the **first** item of the `<ul class="gl-sto
 
 ```html
         <li>
-          <span class="story-date">Nov 2026</span>
+          <span class="story-date">22 Nov 2026</span>
           <span class="story-title"><Title></span>
           <span class="story-links">
             <a href="docs/AG016_<Slug>.html" class="pub-link">Read</a>
@@ -98,7 +98,7 @@ npm install   # first time only
 npm run build
 ```
 
-This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too), `sitemap.xml` and `feed.xml` (RSS), and rewrites any `story.html?file=` links in `index.html`. The timeline date must look like `Nov 2026` (it becomes the RSS publication date).
+This regenerates every `docs/AG###_*.html` page (the previous story's "Next" link changes too), `sitemap.xml` and `feed.xml` (RSS), and rewrites any `story.html?file=` links in `index.html`. The timeline date must look like `22 Nov 2026`, the day the story is published (it becomes the RSS publication date). Posts have been weekly since November 2026, so always include the day; older entries keep month-only dates such as `Jun 2026`.
 
 The build also moves the homepage **"New" badge**: it gives the newest story's `<li>` (the first timeline entry) `class="is-new"`, in the timeline and in Featured, and removes the class from every other entry; `css/style.css` draws the badge. So always write new entries as a plain `<li>`, never add or remove `is-new` by hand, and keep the badge out of the title text.
 
